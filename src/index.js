@@ -10,7 +10,6 @@ const mainContainer = document.getElementById('root');
 const root = createRoot(mainContainer);
 
 root.render(
-  
     <PortfolioApp />,
 );
 

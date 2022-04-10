@@ -7,6 +7,10 @@ font-family: 'Montserrat', sans-serif; */
 *{
   margin: 0;
   padding: 0;
+  transition: .2s; 
+}
+html{
+  /* font-size: 10px; */
 }
 body {
   margin: 0;
@@ -15,6 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
+  
 }
 /* add font */
 h1, h2, h3, h4, h5, a{
@@ -22,12 +27,15 @@ h1, h2, h3, h4, h5, a{
   letter-spacing: 0.1em;
   font-style: normal;
   font-weight: 700;
-  color: #fafafa;
+  color: #000;
 }
 /* add font */
 p{
   font-family: 'DM Sans', sans-serif;
-  color: #fafafa;
+  color: #000;
+}
+a{
+  color: #000;
 }
 figure{
   margin: 0px;
