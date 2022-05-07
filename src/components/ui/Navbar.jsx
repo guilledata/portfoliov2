@@ -30,7 +30,7 @@ export const Navbar = () => {
                     <div className='black-bar'></div>
                     <nav className="navbar">
                             
-                        <Link className="navbar-item navbar-item-home animate__animated animate__fadeInLeft "  to="/" onMouseOver={ChangeHomeColor} onClick={ClickButtom}>
+                        <Link className="navbar-item navbar-item-home animate__animated animate__fadeInLeft frames"  to="/" onMouseOver={ChangeHomeColor} onClick={ClickButtom}>
                             HOME
                         </Link>
                         <Link className="navbar-item animate__animated animate__fadeInLeft " to="/projects" onMouseOver={ChangeColor} onClick={ClickButtom} >

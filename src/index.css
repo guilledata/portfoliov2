@@ -24,18 +24,19 @@ body {
 /* add font */
 h1, h2, h3, h4, h5, a{
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.1em;
+  /* letter-spacing: 0.1em; */
   font-style: normal;
   font-weight: 700;
-  color: #000;
+  color: #fff;
 }
 /* add font */
 p{
   font-family: 'DM Sans', sans-serif;
-  color: #000;
+  color: #fff;
+  font-size: 1.2rem;
 }
 a{
-  color: #000;
+  color: #fff;
 }
 figure{
   margin: 0px;
@@ -51,4 +52,36 @@ img{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.page-name{
+  position: absolute;
+  top: 2.5em;
+  right: 3em;
+  z-index: 9;
+}
+.page-name p{
+  letter-spacing: .2em;
+  font-size: 1.2rem;
+  /* text-decoration: line-through; */
+  border-top: .15em white solid;
+  border-bottom: .15em white solid;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-buttom{
+    top: 1.5em;
+    left: 1em;
+  }
+  .page-name {
+      right: 1.5em;
+      top: 2em;
+  }
+  .page-name p{
+      width: .8em;
+      word-wrap: break-word;
+      text-align: center;
+      font-size: 1rem;
+  }
 }

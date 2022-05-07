@@ -13,7 +13,7 @@ export const ClickButtom = ()=>{
     } else{
         menuContainer.style.animation = "hideMenuContainer .5s forwards";
         menuContainer.addEventListener("animationend", function(e) {
-            if (e.animationName == 'hideMenuContainer') {
+            if (e.animationName === 'hideMenuContainer') {
                 menuContainer.style.display = "none";
             }
         }, false);
@@ -28,11 +28,16 @@ export const ClickButtom = ()=>{
     // change color bars
     let bars = document.querySelectorAll('.bars');
     if ( menuContainer.classList.contains('active-menu') ) {
-        for (let b in bars) {
-            if (Object.hasOwnProperty.call(bars, b)) {
-                bars[b].classList.toggle('black-bars');
+        let homeLink = document.querySelectorAll('.navbar-item')[0];
+        if ( homeLink.classList.contains('frames') ) {
+            for (let b in bars) {
+                if (Object.hasOwnProperty.call(bars, b)) {
+                    bars[b].classList.toggle('black-bars');
+                }
             }
         }
+        
+
     }else if ( menuContainer.classList.contains('hide-menu') ){
         for (let b2 in bars) {
             if (Object.hasOwnProperty.call(bars, b2)) {
